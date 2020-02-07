@@ -108,6 +108,12 @@ body {
             text-align: center;
             table-layout: fixed;
             word-wrap: break-word;
+            position: absolute;
+          }
+          .link_show {
+            text-decoration: none;
+            position: relative;
+            top: 10px;
           }
         }
       }

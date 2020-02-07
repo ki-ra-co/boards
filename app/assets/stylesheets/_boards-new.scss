@@ -24,15 +24,31 @@
       height: 50%;
       width: 12%;
       background-color: rgb(223, 204, 97);
+      line-height: 60px;
+      margin-top: 30px;
+      margin-left: 100px;
+      border-radius: 40px;
+      position: relative;
+    }
+    .home {
+      text-decoration: none;
       color: rgb(231, 93, 59);
       font-weight: bold;
       font-size: 30px;
-      line-height: 60px;
-      text-align: center;
-      margin-top: 30px;
-      margin-left: 100px;
       text-shadow: 2px 2px 0px rgb(80, 7, 7);
-      border-radius: 40px;
+      position: absolute;
+      top: 40px;
+      left: 1210px;
+    }
+    .home:hover {
+      text-decoration: none;
+      color: rgb(3, 133, 240);
+      font-weight: bold;
+      font-size: 30px;
+      text-shadow: 2px 2px 0px rgb(80, 7, 7);
+      position: absolute;
+      top: 40px;
+      left: 1210px;
     }
   }
   &__container {

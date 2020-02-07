@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_02_07_101155) do
     t.string "content", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["title"], name: "index_boards_on_title", unique: true
+    t.index ["title"], name: "index_boards_on_title"
   end
 
 end

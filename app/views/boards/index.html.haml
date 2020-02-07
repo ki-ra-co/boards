@@ -17,4 +17,8 @@
           .group-wrapper__container__center__box__user
             username
           .group-wrapper__container__center__box__title
-            =board.title
+          = link_to new_board_path, {class: :link_show} do
+            = board.title
+            
+            -# = link_to '果物 - Wikipedia', "https://ja.wikipedia.org/wiki/果物", { :class => "outer", :target => "_blank"}
+
