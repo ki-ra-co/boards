@@ -15,3 +15,7 @@
         .board-wrapper__center__show__btn
         = link_to("Go ChatRoom", root_path, {class: "chat_room"})
       .board-wrapper__center__right
+        .board-wrapper__center__right__edit-box
+        = link_to("Edit", edit_board_path(@board.id), {class: "edit"}) 
+        .board-wrapper__center__right__destroy-box
+        = link_to "Delete", board_path(@board.id), method: :delete, class: "destroy"
