@@ -1,0 +1,116 @@
+body {
+  .group-wrapper {
+    height: 100vh;
+    width: 100vw;
+
+    &__header {
+      height: 15%;
+      width: 100%;
+      background-image: url(boards-header.jpg);
+      background-size: 100%;
+      h1 {
+        font-weight: bold;
+        font-size: 100px;
+        color: rgb(216, 152, 34);
+        text-align: center;
+        text-shadow:  20px 20px 20px black;
+      }
+    }
+    &__container {
+      height: calc(100vh - 15%);
+      width: 100%;
+      background-image: url(boards-side.jpg;);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      &__left {
+        height: 100%;
+        width: 25%;
+        background-color: orangered;
+        margin: 0px;
+        float: left;
+        background-image: url(link_new);
+        &__new {
+          height: 100px;
+          width: 200px;
+          background-color: orchid;
+          border-radius: 50px;
+          margin-top: 50px;
+          margin-left: 70px;
+          position: absolute;
+          opacity: 0.8;
+        }
+        .new {
+          text-decoration: none;
+          color: rgb(102, 202, 164);
+          text-shadow: 2px 2px 0px rgb(9, 52, 87);
+          font-weight: bold;
+          font-size: 30px;
+          position: relative;
+          top: 80px;
+          left: 90px;
+        }
+      }
+      &__right {
+        height: 100%;
+        width: 25%;
+        margin: 0px;
+        float: right;
+        background-image: url(link_new);
+        &__home {
+          height: 100px;
+          width: 200px;
+          background-color: yellow;
+          border-radius: 50px;
+          margin-top: 50px;
+          margin-left: 70px;
+          position: absolute;
+          opacity: 0.7;
+        }
+        .home {
+          text-decoration: none;
+          color: rgb(231, 93, 59);
+          text-shadow: 2px 2px 0px rgb(80, 7, 7);
+          font-weight: bold;
+          font-size: 30px;
+          position: relative;
+          top: 80px;
+          left: 120px;
+        }
+      }
+      &__center {
+        height: 100%;
+        width: 50%;
+        margin: 0 auto;
+        color: #fff;
+        font-weight: bold;
+        font-size: 40px;
+        text-align: center;
+        &__box {
+          height: 100px;
+          width: 100%;
+          background-color: black;
+          margin-bottom: 50px;
+          opacity: 0.7;
+          &__user {
+            height: 30%;
+            width: 50%;
+            color: #fff;
+            font-size: 30px;
+            border-bottom: 1px #fff solid;
+            margin: 0 auto;
+            text-align: center;
+          }
+          &__title {
+            height: 70%;
+            width: 100%;
+            color: #fff;
+            font-size: 50px;
+            text-align: center;
+            table-layout: fixed;
+            word-wrap: break-word;
+          }
+        }
+      }
+    }
+  }
+}

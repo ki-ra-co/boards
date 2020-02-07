@@ -1,0 +1,13 @@
+.board-wrapper
+  .board-wrapper__header
+    .board-wrapper__header__left
+      Let's write a headline!
+    .board-wrapper__header__right
+      HOME
+  .board-wrapper__container
+    .board-wrapper__container__box
+      = form_with(model: @board, local: true,class: :form_box) do |form|
+        = form.text_area :title, placeholder: "タイトル", size: "100x5",class: :form_title
+        = form.text_area :content,placeholder: "あなたのchatの紹介文を入力してください", size: "100x30", class: :form_content
+        = form.submit 'PUSH',class: :form__btn
+

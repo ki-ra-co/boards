@@ -1,0 +1,99 @@
+.board-wrapper {
+  height: 100vh;
+  width: 100vw;
+
+  &__header {
+    height: 15%;
+    width: 100%;
+    background-image: url(boards-header.jpg);
+    background-size: 100%;
+    display: flex;
+    &__left {
+      height: 50%;
+      width: 50%;
+      color: rgb(95, 10, 10);
+      text-shadow:  2px 2px 0px rgb(218, 83, 83);
+      font-weight: bold;
+      text-align: center;
+      font-size: 70px;
+      line-height: 90px;
+      margin-top: 10px;
+      margin-left: 350px;
+    }
+    &__right {
+      height: 50%;
+      width: 12%;
+      background-color: rgb(223, 204, 97);
+      color: rgb(231, 93, 59);
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 60px;
+      text-align: center;
+      margin-top: 30px;
+      margin-left: 100px;
+      text-shadow: 2px 2px 0px rgb(80, 7, 7);
+      border-radius: 40px;
+    }
+  }
+  &__container {
+    height: 85%;
+    width: 100%;
+    background-image: url(boards-hover.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &__box {
+      height: 100%;
+      width: 80%;
+      margin: 0 auto;
+      .form_box {
+        height: 100%;
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+
+        .form_title {
+          height: 100px;
+          border: 5px rgb(90, 88, 88) solid;
+          border-radius: 30px;
+          margin-top: 100px;
+          font-size: 50px;
+          opacity: 0.8;
+        }
+        .form_title::placeholder {
+          line-height: 60px;
+          font-size: 30px;
+          text-align: center;
+        }
+        .form_content {
+          height: 600px;
+          border: 5px rgb(90, 88, 88) solid;
+          font-size: 50px;
+          margin-top: 50px;
+          opacity: 0.8;
+        }
+        .form_content::placeholder {
+          font-size: 30px;
+          position: relative;
+          top: 0.3em;
+          text-align: center;
+        }
+        .form__btn {
+          height: 70px;
+          width: 120px;
+          background-color: gray;
+          color: rgb(85, 157, 199);
+          font-size: 30px;
+          text-shadow: 2px 2px 0px blue;
+          font-weight: bold;
+          border: 5px rgb(90, 88, 88) solid;
+          margin-top: 70PX;
+          margin-left: 400px;
+          
+        }
+      }
+    }
+  }
+}
