@@ -5,6 +5,16 @@ class BoardsController < ApplicationController
   end
 
   def new
-    
+    @board = Board.new
+  end
+
+  def create
+    Board.create(board_params)
+    redirect_to root_path
+  end
+
+  private
+  def board_params
+    params.require(:board).permit(:title, :content)
   end
 end
