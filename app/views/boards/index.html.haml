@@ -14,10 +14,11 @@
             .group-wrapper__container__center__box__user
               username
             .group-wrapper__container__center__box__title
-            = link_to new_board_path, {class: :link_show} do
+            = link_to board_path(board.id), {class: :link_show} do
               = board.title
       .group-wrapper__container__right
         .group-wrapper__container__right__home
         = link_to("HOME", new_board_path, {class: "home"})
+
 
 

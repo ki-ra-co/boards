@@ -1,10 +1,17 @@
 %body
-= @boards.each do |board|
   .board-wrapper
     .board-wrapper__header
+      .board-wrapper__header__left
+        %h1 Your Board!
+      .board-wrapper__header__right
+      = link_to("HOME", root_path, {class: "home"})
     .board-wrapper__center
+      .board-wrapper__center__left
       .board-wrapper__center__show
         .board-wrapper__center__show__title
           = @board.title
         .board-wrapper__center__show__content
           = @board.content
+        .board-wrapper__center__show__btn
+        = link_to("Go ChatRoom", root_path, {class: "chat_room"})
+      .board-wrapper__center__right
