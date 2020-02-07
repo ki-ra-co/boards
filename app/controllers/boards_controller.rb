@@ -14,7 +14,8 @@ class BoardsController < ApplicationController
   end
 
   def show
-    
+    binding pry
+    @board = Board.find(params[:id])
   end
 
   private

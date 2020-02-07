@@ -1,8 +1,10 @@
-.board-wrapper
-  .board-wrapper__header
-  .board-wrapper__center
-    .board-wrapper__center__show
-      .board-wrapper__center__show__title
-        = @board.title
-      .board-wrapper__center__show__content
-        = @board.content
+%body
+= @boards.each do |board|
+  .board-wrapper
+    .board-wrapper__header
+    .board-wrapper__center
+      .board-wrapper__center__show
+        .board-wrapper__center__show__title
+          = @board.title
+        .board-wrapper__center__show__content
+          = @board.content
