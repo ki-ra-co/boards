@@ -10,12 +10,13 @@
         = link_to("make board!", new_board_path, {class: "new"})
       .group-wrapper__container__center
         - @boards.each do |board|
-          .group-wrapper__container__center__box
-            .group-wrapper__container__center__box__user
-              username
-            .group-wrapper__container__center__box__title
-            = link_to board_path(board.id), {class: :link_show} do
-              = board.title
+          - @users.each do |user|
+            .group-wrapper__container__center__box
+              .group-wrapper__container__center__box__user
+                = user.name
+              .group-wrapper__container__center__box__title
+              = link_to board_path(board.id), {class: :link_show} do
+                = board.title
       .group-wrapper__container__right
         .group-wrapper__container__right__home
         = link_to("HOME", new_board_path, {class: "home"})
