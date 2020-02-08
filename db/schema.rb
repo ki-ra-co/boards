@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_08_162836) do
+ActiveRecord::Schema.define(version: 2020_02_08_212228) do
 
   create_table "boards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
@@ -18,6 +18,17 @@ ActiveRecord::Schema.define(version: 2020_02_08_162836) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["title"], name: "index_boards_on_title"
+  end
+
+  create_table "chats", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "content"
+    t.string "image"
+    t.bigint "user_id"
+    t.bigint "board_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["board_id"], name: "index_chats_on_board_id"
+    t.index ["user_id"], name: "index_chats_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -43,6 +54,8 @@ ActiveRecord::Schema.define(version: 2020_02_08_162836) do
     t.index ["user_id"], name: "index_users_boards_on_user_id"
   end
 
+  add_foreign_key "chats", "boards"
+  add_foreign_key "chats", "users"
   add_foreign_key "users_boards", "boards"
   add_foreign_key "users_boards", "users"
 end
