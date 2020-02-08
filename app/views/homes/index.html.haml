@@ -9,10 +9,9 @@
           %li.link-box__left_login
             %h1 login
             = link_to("login!",new_user_session_path, {class: "login-font"})
-
           %li.link-box__left__create
             %h1 sign up!
-
+            = link_to("sign up!",new_user_registration_path, {class: "login-font"})
         %ul.link-box__right
           %li.link-box__right_facebook
             %h1 facebook
