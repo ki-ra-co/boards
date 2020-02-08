@@ -1,5 +1,5 @@
-.account-page {
-  .account-page__inner {
+.sign-up__account-page {
+  &__inner {
     width: 980px;
     margin: 60px auto;
     padding: 60px;
@@ -8,7 +8,7 @@
     border-radius: 5px;
 
 
-    .account-page__inner--left, .account-page__inner--right {
+    &__inner--left, .sign-up__account-page__inner--right {
       float: left;
       height: 300px;
       width: 50%;
@@ -21,13 +21,13 @@
   }
 
   
-  .account-page__inner--right{
+  &__inner--right{
     background-color: black;
     color: white;
     font-weight: bold;
     text-align: center;
   }
-  .account-page__header-login {
+  &__header-login {
     height: 300px;
     text-align: center;
     background-image: url(signup.jpg);
@@ -65,7 +65,7 @@
     }
   }
 
-  .account-page__header-create {
+  &__header-create {
     height: 300px;
     text-align: center;
     background-image: url(create-account.jpg);
