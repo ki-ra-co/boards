@@ -1,0 +1,43 @@
+.chat-wrapper {
+  height: 100vh;
+  width: 100vw;
+  &__header {
+    height: 15%;
+    width: 100%;
+    background-image: url(boards-header.jpg);
+    background-size: 100%;
+    display: flex;
+    &__title {
+      height: 50%;
+      width: 50%;
+      color: rgb(95, 10, 10);
+      text-shadow:  2px 2px 0px rgb(218, 83, 83);
+      font-weight: bold;
+      text-align: center;
+      font-size: 70px;
+      line-height: 90px;
+      margin-top: 10px;
+      margin-left: 350px;
+    }
+    &__btn {
+      height: 50%;
+      width: 12%;
+      background-color: rgb(223, 204, 97);
+      line-height: 60px;
+      margin-top: 30px;
+      margin-left: 100px;
+      border-radius: 40px;
+      position: relative;
+      .home {
+        text-decoration: none;
+        color: rgb(231, 93, 59);
+        font-weight: bold;
+        font-size: 30px;
+        text-shadow: 2px 2px 0px rgb(80, 7, 7);
+        position: absolute;
+        top: 40px;
+        left: 1210px;
+      }
+    }
+  }
+}

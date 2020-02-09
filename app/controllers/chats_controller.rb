@@ -1,7 +1,5 @@
 class ChatsController < ApplicationController
-  def index 
+  def index
     @chats = Chat.all
   end
-  
-  
 end
