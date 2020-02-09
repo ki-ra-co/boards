@@ -147,9 +147,17 @@ body {
             color: #fff;
             padding-left: 0px;
             padding-top: 40px;
-            padding-right: 0px;
-            padding-left: 0px;
+            padding-right: 300px;
+            padding-left: 300px;
           }
+        }
+        &__box:hover {
+          height: 100px;
+          width: 100%;
+          background-color: rgb(51, 132, 185);
+          margin-bottom: 50px;
+          opacity: 0.7;
+          overflow: scroll;
         }
       }
     }
