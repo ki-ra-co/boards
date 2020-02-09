@@ -102,8 +102,9 @@
       }
     }
     &__center {
-      height: 100%;
+      height: calc(100% - 40px);
       width: 60%;
+      position: relative;
       &__upper {
         height: 100px;
         width: 60%;
@@ -118,7 +119,7 @@
         background-color: brown;
         margin-top: 20px;
         &__ctat-box {
-          height: 150px;
+          height: 100px;
           width: 400px;
           background-color: chartreuse;
           margin-left: 20px;
@@ -138,6 +139,15 @@
             width: 50%;
           }
         }
+      }
+      &__form {
+        height: 70px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: blanchedalmond;
+        position: absolute;
+        bottom: 1px;
+        left: 80px;
       }
     }
     &__right {
