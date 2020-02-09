@@ -113,6 +113,18 @@
           margin-top: 70PX;
           margin-left: 400px;
         }
+        .form__btn:hover {
+          height: 70px;
+          width: 120px;
+          background-color: gray;
+          color: rgb(85, 157, 199);
+          font-size: 30px;
+          text-shadow: 2px 2px 0px rgb(226, 54, 24);
+          font-weight: bold;
+          border: 5px rgb(90, 88, 88) solid;
+          margin-top: 70PX;
+          margin-left: 400px;
+        }
       }
     }
   }

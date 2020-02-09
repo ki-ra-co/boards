@@ -11,7 +11,7 @@ class BoardsController < ApplicationController
 
   def create
     Board.create(board_params)
-    redirect_to root_path
+    redirect_to boards_path
   end
 
   def show
@@ -25,7 +25,7 @@ class BoardsController < ApplicationController
   def update
     board = Board.find(params[:id])
     board.update(board_params)
-    redirect_to root_path
+    redirect_to boards_path
   end
 
   def destroy
