@@ -80,4 +80,70 @@
       right: 125px;
     }
   }
+  &__container {
+    height: 85%;
+    width: 100%;
+    background-color: rgb(253, 251, 251);
+    display: flex;
+    &__left {
+      height: 100%;
+      width: 20%;
+      background-color: gray;
+      &_author {
+        height: 50px;
+        width: 200px;
+        background-color: black;
+        margin: 0 auto;
+        margin-top: 45px;
+        color: blanchedalmond;
+        font-weight: bold;
+        line-height: 50px;
+        padding-left: 10px;
+      }
+    }
+    &__center {
+      height: 100%;
+      width: 60%;
+      &__upper {
+        height: 100px;
+        width: 60%;
+        background-color: rgb(94, 24, 24);
+        margin: 0 auto;
+        margin-top: 20px;
+        border-radius: 30px;
+      }
+      &__bottom {
+        height: calc(100% - 100px);
+        width: 100%;
+        background-color: brown;
+        margin-top: 20px;
+        &__ctat-box {
+          height: 150px;
+          width: 400px;
+          background-color: chartreuse;
+          margin-left: 20px;
+          margin-bottom: 50px;
+          &_name {
+            height: 20%;
+            width: 40%;
+            border-right: 1px black solid;
+            border-bottom: 1px black solid;
+          }
+          &_message {
+            height: 60%;
+            width: 100%;
+          }
+          &_date {
+            height: 20%;
+            width: 50%;
+          }
+        }
+      }
+    }
+    &__right {
+      height: 100%;
+      width: 20%;
+      background-color: gray;
+    }
+  }
 }
