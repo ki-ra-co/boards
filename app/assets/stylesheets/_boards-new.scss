@@ -75,11 +75,14 @@
           border: 5px rgb(90, 88, 88) solid;
           border-radius: 30px;
           margin-top: 100px;
+          padding-left: 30px;
+          padding-right: 30px;
           font-size: 35px;
+          line-height: 50px;
           opacity: 0.8;
         }
         .form_title::placeholder {
-          line-height: 60px;
+          line-height: 80px;
           font-size: 30px;
           text-align: center;
         }
@@ -88,10 +91,12 @@
           border: 5px rgb(90, 88, 88) solid;
           font-size: 40px;
           margin-top: 50px;
+          padding-left: 30px;
+          padding-right: 30px;
           opacity: 0.8;
         }
         .form_content::placeholder {
-          font-size: 30px;
+          font-size: 40px;
           position: relative;
           top: 0.3em;
           text-align: center;

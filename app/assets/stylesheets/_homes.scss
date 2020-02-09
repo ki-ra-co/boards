@@ -145,7 +145,7 @@ body {
         border-top-right-radius: 1000px;
         border-bottom-right-radius: 50px;
         border-bottom-left-radius: 50px;
-
+        transition: 1s;
         ul.link-box__left {
           height: 100%;
           width: 50%;
@@ -226,7 +226,7 @@ body {
           width: 50%;
           list-style: none;
           padding-top: 275px;
-          padding-right: 80px;
+          padding-right: 60px;
           opacity: 1;
           li.link-box__right_facebook {
             height: 100px;
