@@ -20,11 +20,11 @@
             .chat-wrapper__container__center__bottom__ctat-box_date
         .chat-wrapper__container__center__form
           .chat-wrapper__container__center__form__container
-            = form_for [@board, @chat],html:{class:"chat__main__message-form__container__messages"} do |f|
-              = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-              = f.label :image, class: 'chat__main__message-form__container__messages_icon' do
-                = icon('far', 'image', class: 'chat__main__message-form__container__messages_image fa-lg')
-                = f.file_field :image, class: 'chat_main__message-form__container__messages_text'
-              = f.submit 'Send', class: 'chat__main__message-form__container__send'
+            = form_for [@board, @chat],html:{class:"form"} do |f|
+              = f.text_field :content, class: 'form_chat', placeholder: 'コメントを入力してください'
+              = f.label :image, class: 'image_box' do
+                = icon('far', 'image', class: 'image_icon fa-lg')
+                = f.file_field :image, class: 'chat_text'
+              = f.submit 'Send', class: 'chat_btn'
 
       .chat-wrapper__container__right
