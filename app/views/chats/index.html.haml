@@ -1,9 +1,12 @@
 %body
   .chat-wrapper
     .chat-wrapper__header
+      .chat-wrapper__header__back
+      = link_to("back", root_path, {class: "back"})
       .chat-wrapper__header__title
         Our chat!
-      .chat-wrapper__header__btn
+      .chat-wrapper__header__list
+      = link_to("To List", root_path, {class: "home"})
     .chat-wrapper__container
       .chat-wrapper__container__left
       .chat-wrapper__container__right
