@@ -64,12 +64,13 @@ body {
           left: 90px;
         }
       }
-      &__right {
+      ul {
         height: 100%;
         width: 25%;
         margin: 0px;
         background-image: url(link_new);
-        &__home {
+        position: relative;
+        li.group-wrapper__container__right__home {
           height: 100px;
           width: 200px;
           background-color: yellow;
@@ -78,6 +79,8 @@ body {
           margin-left: 70px;
           position: absolute;
           opacity: 0.7;
+          flex-flow:column;
+          justify-content: space-between;
         }
         .home {
           text-decoration: none;
@@ -106,6 +109,39 @@ body {
           padding-top: 20px;
           padding-right: 30px;
           padding-left: 30px;
+        }
+        li.group-wrapper__container__right__log-out {
+          height: 70px;
+          width: 200px;
+          background-color: gray;
+          border: 3px black solid;
+          margin-top: 50px;
+          margin-left: 70px;
+          opacity: 0.7;
+          position: absolute;
+          bottom: 100px;
+        }
+        .log-out {
+          font-size: 40px;
+          color:blue;
+          letter-spacing: 3px;
+          text-decoration: none;
+          position: absolute;
+          bottom: 105px;
+          right: 90px;
+          padding: 10px 20px;
+          transition: 0.5s;
+        }
+        .log-out:hover {
+          font-size: 50px;
+          color: red;
+          font-weight: bold;
+          letter-spacing: 3px;
+          text-decoration: none;
+          position: absolute;
+          bottom: 100px;
+          right: 70px;
+          padding: 10px 20px;
         }
       }
       &__center {

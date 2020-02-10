@@ -17,9 +17,11 @@
               .group-wrapper__container__center__box__title
               = link_to board_path(board.id), {class: :link_show} do
                 = board.title
-      .group-wrapper__container__right
-        .group-wrapper__container__right__home
+      %ul.group-wrapper__container__right
+        %li.group-wrapper__container__right__home
         = link_to("HOME", root_path, {class: "home"})
+        %li.group-wrapper__container__right__log-out
+        = link_to "Log out", destroy_user_session_path, method: :delete, class:'log-out'
 
 
 
