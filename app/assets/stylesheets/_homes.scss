@@ -55,16 +55,16 @@ body {
             opacity: 0.6;
             position: relative;
           }
-          .login-font{
-            text-decoration: none;
-            position: absolute;
-            top: 7px;
-            left: 10px;
-            opacity: 0;
-          }
-          .login-font:link {
-            font-size: 170px;
-          }
+            .login-font {
+              text-decoration: none;
+              position: absolute;
+              top: 7px;
+              left: 10px;
+              opacity: 0;
+            }
+            .login-font:link {
+              font-size: 170px;
+            }
           li.link-box__left__create {
             height: 100px;
             width: 300px;
@@ -76,6 +76,16 @@ body {
             border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
             padding: 1%;
             opacity: 0;
+          }
+          .sign_up-font{
+            text-decoration: none;
+            position: absolute;
+            top: 7px;
+            left: 10px;
+            opacity: 0;
+          }
+          .sign_up-font {
+            font-size: 170px;
           }
         }
 
@@ -170,13 +180,23 @@ body {
             padding: 1%;
             opacity: 0.8;
             cursor: pointer;
+            .font-login {
+              text-decoration: none;
+              position: absolute;
+              top: 7px;
+              left: 10px;
+              opacity: 0;
+            }
+            .font-login:link {
+              font-size: 170px;
+            }
           }
           li.link-box__left_login:hover {
             height: 100px;
             width: 300px;
             background-color:yellow;
             color: aqua;
-            font-size: 80px;
+            font-size: 100px;
             font-weight: bold;
             transform: rotateX(10deg);
             transition: 1s;

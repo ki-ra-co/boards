@@ -4,6 +4,8 @@ class ChatsController < ApplicationController
   def index
     @chat = Chat.new
     @chats = @board.content
+    @boards = Board.all
+    @users = User.all
   end
 
   def create

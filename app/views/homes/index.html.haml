@@ -6,12 +6,17 @@
     .home-wrapper__container
       .home-wrapper__link-box
         %ul.link-box__left
-          %li.link-box__left_login
+          %li.link-box__left_login 
             %h1 login
-            = link_to("login!",new_user_session_path, {class: "login-font"})
-          %li.link-box__left__create
-            %h1 sign up!
-            = link_to("sign up!",new_user_registration_path, {class: "login-font"})
+            - if user_signed_in?
+              = link_to("login",boards_path,{class:"font-login"})
+            - else
+              = link_to(new_user_session_path,{class:"font-login"})
+            %li.link-box__left__create sign up
+            - if user_signed_in?
+              = link_to("sign up!",boards_path,{class:"font-sign_up"})
+            - else
+              = link_to(new_user_session_path,{class:"font-sign_up"})
         %ul.link-box__right
           %li.link-box__right_facebook
             %h1 facebook
