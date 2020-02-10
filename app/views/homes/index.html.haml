@@ -12,7 +12,8 @@
               = link_to("login",boards_path,{class:"font-login"})
             - else
               = link_to(new_user_session_path,{class:"font-login"})
-            %li.link-box__left__create sign up
+          %li.link-box__left__create 
+            %h1 sign up
             - if user_signed_in?
               = link_to("sign up!",boards_path,{class:"font-sign_up"})
             - else

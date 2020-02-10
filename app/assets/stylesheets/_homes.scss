@@ -55,16 +55,9 @@ body {
             opacity: 0.6;
             position: relative;
           }
-            .login-font {
-              text-decoration: none;
-              position: absolute;
-              top: 7px;
-              left: 10px;
-              opacity: 0;
-            }
-            .login-font:link {
-              font-size: 170px;
-            }
+          .font-login {
+            opacity: 0;
+          }
           li.link-box__left__create {
             height: 100px;
             width: 300px;
@@ -77,15 +70,8 @@ body {
             padding: 1%;
             opacity: 0;
           }
-          .sign_up-font{
-            text-decoration: none;
-            position: absolute;
-            top: 7px;
-            left: 10px;
+          .font-sign_up{
             opacity: 0;
-          }
-          .sign_up-font {
-            font-size: 170px;
           }
         }
 
@@ -222,6 +208,13 @@ body {
             padding: 1%;
             opacity: 0.8;
             cursor: pointer;
+            .font-sign_up{
+              text-decoration: none;
+              position: absolute;
+              top: 7px;
+              left: 10px;
+              opacity: 0;
+            }
           }
           li.link-box__left__create:hover {
             height: 100px;
@@ -240,7 +233,6 @@ body {
             opacity: 1;
           }
         }
-
         ul.link-box__right {
           height: 100%;
           width: 50%;
