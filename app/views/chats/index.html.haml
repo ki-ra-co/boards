@@ -9,10 +9,8 @@
       = link_to("To List", boards_path, {class: "home"})
     .chat-wrapper__container
       .chat-wrapper__container__left
-      - @chats.each do |chat|
         %h1.chat-wrapper__container__left_author
           作成者：
-          = chat.user.name
       .chat-wrapper__container__center
         .chat-wrapper__container__center__upper
           = @board.title
