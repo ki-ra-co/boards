@@ -106,26 +106,31 @@
       width: 60%;
       position: relative;
       &__upper {
-        height: 100px;
-        width: 60%;
-        background-color: rgb(94, 24, 24);
-        margin: 0 auto;
-        margin-top: 20px;
-        border-radius: 30px;
-        position: relative;
-        p {
-          color: blanchedalmond;
-          font-size: 30px;
-          position: absolute;
-          top: 30px;
-          left: 30px;
+        height: calc(100%-20px);
+        background-color: brown;
+        padding-top: 40px;
+        &__title {
+          height: 100px;
+          width: 60%;
+          background-color: rgb(94, 24, 24);
+          margin: 0 auto;
+
+          
+          border-radius: 30px;
+          position: relative;
+          p {
+            color: blanchedalmond;
+            font-size: 30px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+          }
         }
       }
       &__bottom {
         height: calc(100% - 100px);
         width: 100%;
         background-color: brown;
-        margin-top: 20px;
         &__ctat-box {
           height: 100px;
           width: 400px;

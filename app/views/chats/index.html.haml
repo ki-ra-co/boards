@@ -13,9 +13,10 @@
           作成者：
       .chat-wrapper__container__center
         .chat-wrapper__container__center__upper
-          %p.board-title
-            The The board title is :
-            = @board.title 
+          .chat-wrapper__container__center__upper__title
+            %p.board-title
+              The board title is :
+              = @board.title 
         .chat-wrapper__container__center__bottom
           - @chats.each do |chat|
             .chat-wrapper__container__center__bottom__ctat-box
