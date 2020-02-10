@@ -1,11 +1,10 @@
 class ChatsController < ApplicationController
   before_action :set_board
 
+
   def index
     @chat = Chat.new
-    @chats = @board.content
-    @boards = Board.all
-    @users = User.all
+    @chats = @board.chats.includes(:user)
   end
 
   def create
@@ -22,4 +21,5 @@ class ChatsController < ApplicationController
   def set_board
     @board = Board.find(params[:board_id])
   end
+
 end

@@ -9,19 +9,22 @@
       = link_to("To List", boards_path, {class: "home"})
     .chat-wrapper__container
       .chat-wrapper__container__left
+      - @chats.each do |chat|
         %h1.chat-wrapper__container__left_author
           作成者：
+          = chat.user.name
       .chat-wrapper__container__center
         .chat-wrapper__container__center__upper
+          = @board.title
         .chat-wrapper__container__center__bottom
-          - @boards.each do |board|
-            - @users.each do |user|
-              .chat-wrapper__container__center__bottom__ctat-box
-                .chat-wrapper__container__center__bottom__ctat-box_name
-                  = user.name
-                .chat-wrapper__container__center__bottom__ctat-box_message
-                .chat-wrapper__container__center__bottom__ctat-box_date
-                  = @chats.created_at.strftime("%Y年%m月%d日 %H時%M分")
+          - @chats.each do |chat|
+            .chat-wrapper__container__center__bottom__ctat-box
+              .chat-wrapper__container__center__bottom__ctat-box_name
+                = chat.user.name
+              .chat-wrapper__container__center__bottom__ctat-box_message
+                = chat.content
+              .chat-wrapper__container__center__bottom__ctat-box_date
+                = chat.created_at.strftime("%Y年%m月%d日 %H時%M分")
         .chat-wrapper__container__center__form
           .chat-wrapper__container__center__form__container
             = form_for [@board, @chat],html:{class:"form"} do |f|
