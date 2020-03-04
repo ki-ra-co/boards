@@ -1,9 +1,9 @@
-#login__account-page.account-page
+.login__account-page
   .login__account-page__inner.clearfix
     .login__account-page__inner--left.login__account-page__header-login
-      %h2 Log in
-      %h5 登録しているユーザーでログイン
-      = render "devise/shared/links"
+      %h2.letsLogin Let's login
+      %h5 さあ、あなたの好きなボードを作って
+      %h5 共通の話題を仲間でチャットしましょう
     .login__account-page__inner--right.user-form
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
         .field
