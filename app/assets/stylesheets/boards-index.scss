@@ -7,7 +7,7 @@ body {
     &__header {
       height: 15%;
       width: 100%;
-      background-image: url(boards-header.jpg);
+      background-image: image-url("boards-header.jpg");
       background-size: 100%;
       h1 {
         font-weight: bold;
@@ -20,7 +20,7 @@ body {
     &__container {
       height: calc(100vh - 15%);
       width: 100%;
-      background-image: url(boards-side.jpg;);
+      background-image: image-url("boards-side.jpg");
       background-repeat: no-repeat;
       background-size: 100%;
       display: flex;
