@@ -78,7 +78,56 @@
     &__right {
       height: 92%;
       width: 25%;
+      &__edit-box {
+        height: 60px;
+        width: 173px;
+        background-color: rgb(71, 99, 223);
+        border-radius: 50px;
+        margin-top: 50px;
+        margin-left: 90px;
+        position: absolute;
+        opacity: 0.6;
+      }
+      .edit {
+        text-decoration: none;
+        position: relative;
+        top: 60px;
+        left: 150px;
+        font-size: 30px;
+        color: blanchedalmond;
+      }
+      .edit:hover {
+        text-decoration: none;
+        position: relative;
+        top: 60px;
+        left: 150px;
+        color: rgb(110, 20, 20);
+      }
+      &__destroy-box {
+        height: 60px;
+        width: 173px;
+        background-color: rgb(12, 10, 12);
+        margin-top: 100px;
+        margin-left: 90px;
+        position: absolute;
+        opacity: 0.6;
+      }
+      .destroy {
+        text-decoration: none;
+        position: relative;
+        top: 150px;
+        left: 85px;
+        font-size: 30px;
+        color: blanchedalmond;
+      }
+      .destroy:hover {
+        text-decoration: none;
+        position: relative;
+        top: 55px;
+        font-size: 40px;
+        color: blanchedalmond;
+        transition: 0.5s;
+      }
     }
   }
-  
 }
