@@ -81,30 +81,23 @@
     &__right {
       height: 92%;
       width: 25%;
-      &__edit-box {
-        height: 60px;
-        width: 173px;
-        background-color: rgb(71, 99, 223);
-        border-radius: 50px;
-        margin-top: 50px;
-        margin-left: 90px;
-        position: absolute;
-        opacity: 0.6;
-      }
       .edit {
+        background-color: rgb(71, 99, 223);
         text-decoration: none;
-        position: relative;
-        top: 60px;
-        left: 150px;
-        font-size: 30px;
         color: blanchedalmond;
-      }
-      .edit:hover {
-        text-decoration: none;
+        font-size: 30px;
+        border-radius: 10%;
+        padding: 20px 50px;
         position: relative;
         top: 60px;
-        left: 150px;
-        color: rgb(110, 20, 20);
+        left: 100px;
+        &:hover {
+          text-decoration: none;
+          position: relative;
+          top: 60px;
+          left: 100px;
+          color: rgb(110, 20, 20);
+        }
       }
       &__destroy-box {
         text-decoration: none;
@@ -113,7 +106,7 @@
         padding: 20px 40px;
         position: relative;
         top: 200px;
-        left: 30px;
+        right: 70px;
         opacity: 0.6;
         color: blanchedalmond;
         &:hover {

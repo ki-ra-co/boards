@@ -13,6 +13,13 @@
           = @board.content
         = link_to("Go ChatRoom", board_chats_path(@board.id), {class: "board-wrapper__center__show__btn"})
       .board-wrapper__center__right
-        .board-wrapper__center__right__edit-box
-        = link_to("Edit", edit_board_path(@board.id), {class: "edit"})
-        = link_to "Delete", board_path(@board.id), method: :delete, class: "board-wrapper__center__right__destroy-box"
+        - if current_user.id == @board.user_id
+          .board-wrapper__center__right__edit-box
+        -else
+          .board-wrapper__center__right__edit-box
+          = link_to("Edit", edit_board_path(@board.id), {class: "edit"})
+          = link_to "Delete", board_path(@board.id), method: :delete, class: "board-wrapper__center__right__destroy-box"
+
+
+
+
