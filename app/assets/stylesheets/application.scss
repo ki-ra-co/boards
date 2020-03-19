@@ -1,5 +1,7 @@
+*:focus {
+  outline: none;
+  };
 @import "reset";
-@import "homes";
 @import "sign-up_user";
 @import "login_user";
 @import "edit_user";
