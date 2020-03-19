@@ -1,13 +1,11 @@
 %body
-
   .group-wrapper
     .group-wrapper__header
       %h1.header-title
         Welcome!　chat-boards
     .group-wrapper__container
       .group-wrapper__container__left
-        .group-wrapper__container__left__new
-        = link_to("make board!", new_board_path, {class: "new"})
+        = link_to("make board!", new_board_path, {class: "group-wrapper__container__left__new"})
       .group-wrapper__container__center
         - @boards.each do |board|
           - @users.each do |user|
@@ -19,9 +17,8 @@
                 = board.title
       %ul.group-wrapper__container__right
         %li.group-wrapper__container__right__home
-        = link_to("HOME", root_path, {class: "home"})
-        %li.group-wrapper__container__right__log-out
-        = link_to "Log out", destroy_user_session_path, method: :delete, class:'log-out'
+        = link_to "HOME", root_path, class: "home"
+        = link_to "Log out", destroy_user_session_path, method: :delete, class:'group-wrapper__container__right__log-out'
 
 
 

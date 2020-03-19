@@ -3,7 +3,6 @@ body {
     height: 100vh;
     width: 100vw;
     position: fixed;
-
     &__header {
       height: 15%;
       width: 100%;
@@ -11,64 +10,55 @@ body {
       background-size: 100%;
       h1 {
         font-weight: bold;
-        font-size: 100px;
-        color: rgb(216, 152, 34);
+        font-size: 90px;
+        color: orange;
         text-align: center;
         text-shadow:  20px 20px 20px black;
+        line-height: 110px;
       }
     }
     &__container {
       height: calc(100vh - 15%);
       width: 100%;
-      background-image: image-url("boards-side.jpg");
+      background-image: image-url("sign-in.jpg");
       background-repeat: no-repeat;
       background-size: 100%;
       display: flex;
       &__left {
         height: 100%;
         width: 25%;
-        background-color: orangered;
+        background-image: image-url("side-bar.jpg");
+        background-position-y: -150px;
         margin: 0px;
-        
-        background-image: url(link_new);
         &__new {
-          height: 100px;
-          width: 200px;
+          height: 11%;
+          width: 15%;
           background-color: orchid;
+          color: rgb(102, 202, 164);
+          text-shadow: 2px 2px 0px rgb(9, 52, 87);
+          font-weight: bold;
+          font-size: 150%;
+          line-height: 350%;
+          text-align: center;
           border-radius: 50px;
           margin-top: 50px;
           margin-left: 70px;
           position: absolute;
           opacity: 0.8;
-        }
-        .new {
           text-decoration: none;
-          color: rgb(102, 202, 164);
-          text-shadow: 2px 2px 0px rgb(9, 52, 87);
-          font-weight: bold;
-          font-size: 30px;
-          position: relative;
-          top: 80px;
-          left: 90px;
-          padding-top: 25px;
-          padding-bottom: 25px;
-        }
-        .new:hover {
-          text-decoration: none;
-          color: rgb(173, 41, 96);
-          text-shadow: 2px 2px 0px rgb(9, 52, 87);
-          font-weight: bold;
-          font-size: 30px;
-          position: relative;
-          top: 80px;
-          left: 90px;
+          &:hover {
+            color: rgb(173, 41, 96);
+            text-shadow: 2px 2px 0px rgb(9, 52, 87);
+            font-weight: bold;
+          }
         }
       }
       ul {
         height: 100%;
         width: 25%;
         margin: 0px;
-        background-image: url(link_new);
+        background-image: image-url("side-bar.jpg");
+        background-position: right;
         position: relative;
         li.group-wrapper__container__right__home {
           height: 100px;
@@ -110,38 +100,29 @@ body {
           padding-right: 30px;
           padding-left: 30px;
         }
-        li.group-wrapper__container__right__log-out {
+        .group-wrapper__container__right__log-out {
           height: 70px;
           width: 200px;
-          background-color: gray;
-          border: 3px black solid;
-          margin-top: 50px;
-          margin-left: 70px;
-          opacity: 0.7;
-          position: absolute;
-          bottom: 100px;
-        }
-        .log-out {
+          background-color: rgb(58, 56, 56);
+          color:rgb(30, 151, 155);
           font-size: 40px;
-          color:blue;
+          font-weight: bold;
+          text-align: center;
+          line-height: 70px;
           letter-spacing: 3px;
+          border: 1px solid #fff;
+          border-radius: 30px;
+          opacity: 0.7;
           text-decoration: none;
           position: absolute;
           bottom: 105px;
-          right: 90px;
+          right: 60px;
           padding: 10px 20px;
-          transition: 0.5s;
-        }
-        .log-out:hover {
-          font-size: 50px;
-          color: red;
-          font-weight: bold;
-          letter-spacing: 3px;
-          text-decoration: none;
-          position: absolute;
-          bottom: 100px;
-          right: 70px;
-          padding: 10px 20px;
+          &:hover {
+            color: red;
+            font-weight: bold;
+            letter-spacing: 3px;
+          }
         }
       }
       &__center {
@@ -165,23 +146,13 @@ body {
             width: 50%;
             color: #fff;
             font-size: 30px;
+            text-align: center;
+            padding-bottom: 10px;
             border-bottom: 1px #fff solid;
             margin: 0 auto;
-            text-align: center;
-          }
-          &__title {
-            height: 70%;
-            width: 100%;
-            color: #fff;
-            font-size: 50px;
-            table-layout: fixed;
-            word-wrap: break-word;
-            position: absolute;
           }
           .link_show {
             text-decoration: none;
-            position: relative;
-            top: 10px;
             color: #fff;
             padding-top: 40px;
             padding-right: 150px;
