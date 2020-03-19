@@ -4,7 +4,7 @@
   &__header {
     height: 15%;
     width: 100%;
-    background-image: url(boards-header.jpg);
+    background-image: image-url("boards-header.jpg");
     background-size: 100%;
     display: flex;
     &__back {
@@ -81,18 +81,22 @@
     }
   }
   &__container {
-    height: 85%;
+    height: 100%;
     width: 100%;
-    background-color: rgb(253, 251, 251);
+    background-image: image-url("chat-container.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;;
+    background-position-y: -100px;
+    position: fixed;
     display: flex;
     &__left {
       height: 100%;
       width: 20%;
-      background-color: gray;
       &_author {
         height: 50px;
         width: 200px;
         background-color: black;
+        text-align: center;
         margin: 0 auto;
         margin-top: 45px;
         color: blanchedalmond;
@@ -102,34 +106,35 @@
       }
     }
     &__center {
-      height: 86.6%;
+      height: calc(100% - 310px);
       width: 60%;
       position: relative;
       &__upper {
-        height: calc(100%-20px);
+        height: 100%;
         background-color: brown;
         padding-top: 40px;
         padding-bottom: 50px;
+        opacity: 0.7;
         &__title {
-          height: 100px;
-          width: 60%;
-          background-color: rgb(94, 24, 24);
+          height: 50px;
+          width: 30%;
+          line-height: 50px;
+          background-color: rgb(235, 3, 3);
           margin: 0 auto;
           border-radius: 30px;
           position: relative;
           p {
             color: blanchedalmond;
             font-size: 30px;
-            position: absolute;
-            top: 30px;
-            left: 30px;
+            text-align: center;
           }
         }
       }
       &__bottom {
-        height: calc(100% - 100px);
+        height: 100px;
         width: 100%;
         background-color: brown;
+        opacity: 0.9;
         overflow: scroll;
         &__ctat-box {
           height: 100px;
@@ -160,11 +165,8 @@
       &__form {
         height: 70px;
         width: 80%;
-        margin: 0 auto;
+        margin: 15px auto;
         background-color: blanchedalmond;
-        position: absolute;
-        bottom: -70px;
-        left: 80px;
         .form_chat {
           height: 50px;
           width: 550px;
@@ -202,7 +204,6 @@
     &__right {
       height: 100%;
       width: 20%;
-      background-color: gray;
     }
   }
 }

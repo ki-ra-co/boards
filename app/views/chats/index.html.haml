@@ -10,12 +10,13 @@
     .chat-wrapper__container
       .chat-wrapper__container__left
         %h1.chat-wrapper__container__left_author
-          作成者：
+          作成者
+          = @board.user.name
       .chat-wrapper__container__center
         .chat-wrapper__container__center__upper
           .chat-wrapper__container__center__upper__title
             %p.board-title
-              The board title is :
+              title :
               = @board.title 
         .chat-wrapper__container__center__bottom
           - @chats.each do |chat|
@@ -26,13 +27,13 @@
                 = chat.content
               .chat-wrapper__container__center__bottom__ctat-box_date
                 = chat.created_at.strftime("%Y年%m月%d日 %H時%M分")
-        .chat-wrapper__container__center__form
-          .chat-wrapper__container__center__form__container
-            = form_for [@board, @chat],html:{class:"form"} do |f|
-              = f.text_field :content, class: 'form_chat', placeholder: 'コメントを入力してください'
-              = f.label :image, class: 'image_box' do
-                = icon('far', 'image', class: 'image_icon fa-lg')
-                = f.file_field :image, class: 'chat_text'
-              = f.submit 'Send', class: 'chat_btn'
+          .chat-wrapper__container__center__form
+            .chat-wrapper__container__center__form__container
+              = form_for [@board, @chat],html:{class:"form"} do |f|
+                = f.text_field :content, class: 'form_chat', placeholder: 'コメントを入力してください'
+                = f.label :image, class: 'image_box' do
+                  = icon('far', 'image', class: 'image_icon fa-lg')
+                  = f.file_field :image, class: 'chat_text'
+                = f.submit 'Send', class: 'chat_btn'
 
       .chat-wrapper__container__right
