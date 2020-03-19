@@ -2,9 +2,8 @@
   .board-wrapper
     .board-wrapper__header
       .board-wrapper__header__left
-        Let's write a headline!
-      .board-wrapper__header__right
-      = link_to("To Board", board_path, {class: "back-btn"})
+        Let's Edit!
+      = link_to("To Board", board_path, {class: "board-wrapper__header__right"})
     .board-wrapper__container
       .board-wrapper__container__box
         = form_with(model: @board, local: true,class: :form_box) do |form|

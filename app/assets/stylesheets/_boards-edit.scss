@@ -5,7 +5,7 @@
   &__header {
     height: 15%;
     width: 100%;
-    background-image: url(boards-header.jpg);
+    background-image: image-url("boards-header.jpg");
     background-size: 100%;
     display: flex;
     &__left {
@@ -21,41 +21,18 @@
       margin-left: 350px;
     }
     &__right {
-      height: 50%;
-      width: 12%;
-      background-color: rgb(223, 204, 97);
-      line-height: 60px;
-      margin-top: 30px;
-      margin-left: 100px;
-      border-radius: 40px;
-      position: relative;
-    }
-    .back-btn {
-      width: 150px;
-      text-decoration: none;
-      color: rgb(231, 93, 59);
-      font-weight: bold;
-      font-size: 30px;
-      text-shadow: 2px 2px 0px rgb(80, 7, 7);
-      position: absolute;
-      top: 40px;
-      left: 1195px;
-    }
-    .back-btn:hover {
-      text-decoration: none;
-      color: rgb(3, 133, 240);
-      font-weight: bold;
-      font-size: 30px;
-      text-shadow: 2px 2px 0px rgb(80, 7, 7);
-      position: absolute;
-      top: 40px;
-      left: 1195px;
+      color: orangered;
+      &:hover {
+        color: rgb(3, 133, 240);
+        font-weight: bold;
+        text-shadow: 2px 2px 0px rgb(80, 7, 7);
+      }
     }
   }
   &__container {
     height: 85%;
     width: 100%;
-    background-image: url(boards-hover.jpg);
+    background-image: image-url("edit-board.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     &__box {
@@ -98,16 +75,6 @@
           text-align: center;
         }
         .form__btn {
-          height: 70px;
-          width: 120px;
-          background-color: gray;
-          color: rgb(85, 157, 199);
-          font-size: 30px;
-          text-shadow: 2px 2px 0px blue;
-          font-weight: bold;
-          border: 5px rgb(90, 88, 88) solid;
-          margin-top: 70PX;
-          margin-left: 400px;
         }
       }
     }

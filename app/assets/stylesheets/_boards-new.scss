@@ -104,26 +104,17 @@
         .form__btn {
           height: 70px;
           width: 120px;
-          background-color: gray;
+          background-color: rgb(122, 106, 106);
           color: rgb(85, 157, 199);
           font-size: 30px;
           text-shadow: 2px 2px 0px blue;
           font-weight: bold;
-          border: 5px rgb(90, 88, 88) solid;
-          margin-top: 70PX;
-          margin-left: 400px;
-        }
-        .form__btn:hover {
-          height: 70px;
-          width: 120px;
-          background-color: gray;
-          color: rgb(85, 157, 199);
-          font-size: 30px;
-          text-shadow: 2px 2px 0px rgb(226, 54, 24);
-          font-weight: bold;
-          border: 5px rgb(90, 88, 88) solid;
-          margin-top: 70PX;
-          margin-left: 400px;
+          border: 1px rgb(230, 161, 144) solid;
+          margin: 70PX auto;
+          &:hover {
+            text-shadow: 2px 2px 0px rgb(226, 54, 24);
+            font-weight: bold;
+          }
         }
       }
     }
