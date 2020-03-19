@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2020_02_08_212228) do
   create_table "boards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
     t.string "content", null: false
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["title"], name: "index_boards_on_title"
@@ -45,17 +46,6 @@ ActiveRecord::Schema.define(version: 2020_02_08_212228) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  create_table "users_boards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "board_id"
-    t.bigint "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["board_id"], name: "index_users_boards_on_board_id"
-    t.index ["user_id"], name: "index_users_boards_on_user_id"
-  end
-
   add_foreign_key "chats", "boards"
   add_foreign_key "chats", "users"
-  add_foreign_key "users_boards", "boards"
-  add_foreign_key "users_boards", "users"
 end
