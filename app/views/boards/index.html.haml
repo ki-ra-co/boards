@@ -8,13 +8,12 @@
         = link_to("make board!", new_board_path, {class: "group-wrapper__container__left__new"})
       .group-wrapper__container__center
         - @boards.each do |board|
-          - @users.each do |user|
-            .group-wrapper__container__center__box
-              .group-wrapper__container__center__box__user
-                = user.name
-              .group-wrapper__container__center__box__title
-              = link_to board_path(board.id), {class: :link_show} do
-                = board.title
+          .group-wrapper__container__center__box
+            .group-wrapper__container__center__box__user
+              = board.user.name
+            .group-wrapper__container__center__box__title
+            = link_to board_path(board.id), {class: :link_show} do
+              = board.title
       %ul.group-wrapper__container__right
         %li.group-wrapper__container__right__home
         = link_to "HOME", root_path, class: "home"

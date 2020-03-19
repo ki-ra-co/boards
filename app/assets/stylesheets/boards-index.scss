@@ -34,7 +34,7 @@ body {
           height: 11%;
           width: 15%;
           background-color: orchid;
-          color: rgb(102, 202, 164);
+          color: rgb(173, 41, 96);
           text-shadow: 2px 2px 0px rgb(9, 52, 87);
           font-weight: bold;
           font-size: 150%;
@@ -47,7 +47,7 @@ body {
           opacity: 0.8;
           text-decoration: none;
           &:hover {
-            color: rgb(173, 41, 96);
+            color: rgb(102, 202, 164);
             text-shadow: 2px 2px 0px rgb(9, 52, 87);
             font-weight: bold;
           }
@@ -156,8 +156,6 @@ body {
             text-decoration: none;
             color: #fff;
             padding-top: 40px;
-            padding-right: 150px;
-            padding-left: 150px;
           }
         }
         &__box:hover {
