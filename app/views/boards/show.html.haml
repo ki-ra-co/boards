@@ -3,8 +3,7 @@
     .board-wrapper__header
       .board-wrapper__header__left
         %h1 Your Board!
-      .board-wrapper__header__right
-      = link_to("To List", boards_path, {class: "home"})
+      = link_to("To List", boards_path, {class: "board-wrapper__header__right"})
     .board-wrapper__center
       .board-wrapper__center__left
       .board-wrapper__center__show
@@ -12,10 +11,8 @@
           = @board.title
         .board-wrapper__center__show__content
           = @board.content
-        .board-wrapper__center__show__btn
-        = link_to("Go ChatRoom", board_chats_path(@board.id), {class: "chat_room"})
+        = link_to("Go ChatRoom", board_chats_path(@board.id), {class: "board-wrapper__center__show__btn"})
       .board-wrapper__center__right
         .board-wrapper__center__right__edit-box
-        = link_to("Edit", edit_board_path(@board.id), {class: "edit"}) 
-        .board-wrapper__center__right__destroy-box
-        = link_to "Delete", board_path(@board.id), method: :delete, class: "destroy"
+        = link_to("Edit", edit_board_path(@board.id), {class: "edit"})
+        = link_to "Delete", board_path(@board.id), method: :delete, class: "board-wrapper__center__right__destroy-box"
