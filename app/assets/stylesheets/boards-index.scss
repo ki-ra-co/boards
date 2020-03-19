@@ -137,9 +137,10 @@ body {
         &__box {
           height: 100px;
           width: 100%;
-          background-color: black;
+          background-color: rgb(189, 115, 66);
+          text-shadow: 0px 5px 10px black;
           margin-bottom: 50px;
-          opacity: 0.7;
+          opacity: 0.6;
           overflow: scroll;
           &__user {
             height: 30%;
